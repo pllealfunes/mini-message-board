@@ -1,0 +1,12 @@
+
+
+h2 #{formtitle}
+
+form(method='POST' action="/newMsg")
+        div.form-group
+          label(for='messageUser') Name :
+          input(type='text', placeholder='Name' name='messageUser')
+        div.form-group
+          label(for='messageText') Message :
+          input(type='textarea', placeholder='New Message' name='messageText')
+        button(type='submit') Submit
