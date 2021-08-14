@@ -2,9 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  a(href='/newMsg') New Message
-  each message in messages
-    p=message.text
-    p=message.user
-    p=message.added
+  a(href='/newMsg').newMsgLink New Message
+  .message
+    each message in messages
+      .message-container
+        h3.msgTopic=message.topic
+        p.msgTitle=message.text
+        p.msgUser=message.user
+        p.msgDate=message.added
