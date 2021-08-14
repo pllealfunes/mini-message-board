@@ -28,10 +28,10 @@ a {
 
 .message-container{
   border-radius: 1rem;
-  width: 800px;
   margin: 1rem;
   background-color: #fff;
   padding: .3rem;
+  width: 800px;
 }
 
 .msgTopic{
