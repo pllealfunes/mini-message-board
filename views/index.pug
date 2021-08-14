@@ -7,6 +7,8 @@ block content
     each message in messages
       .message-container
         h3.msgTopic=message.topic
-        p.msgTitle=message.text
-        p.msgUser=message.user
-        p.msgDate=message.added
+        hr
+        p.msgText=message.text
+        .details-container  
+          p.msgUser=`- ${message.user}`
+          p.msgDate=message.added

@@ -7,11 +7,13 @@ today = mm + '/' + dd + '/' + yyyy;
 
 let messages = [
     {
+        topic: "First Topic",
         text: "Hi there!",
         user: "Amando",
         added: today
     },
     {
+        topic: "Second Topic",
         text: "Hello World!",
         user: "Charles",
         added: today

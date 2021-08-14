@@ -1,14 +1,16 @@
+extends layout
 
-h2 #{formtitle}
+block content 
+    h2 #{formtitle}
 
-form(method='POST' action="/newMsg")
-        div.form-group
-          label(for='messageUser') Name :
-          input(type='text', placeholder='Name' name='messageUser')
-        div.form-group
-          label(for='messageTopic') Topic :
-          input(type='text', placeholder='Name' name='messageTopic')
-        div.form-group
-          label(for='messageText') Message :
-          input(type='textarea', placeholder='New Message' name='messageText')
-        button(type='submit') Submit
+    form(class="msgForm" method='POST' action="/newMsg")
+            div.form-group
+            label(for='messageUser')
+            input(type='text', placeholder='Name' name='messageUser')
+            div.form-group
+            label(for='messageTopic')
+            input(type='text', placeholder='Topic' name='messageTopic')
+            div.form-group
+            label(for='messageText')
+            textarea(placeholder='New Message' name='messageText')
+            button(type='submit') Submit
